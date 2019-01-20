@@ -19,6 +19,7 @@ namespace Outfitted
         const float marginBottom = 55f;
 
         const float MaxValue = 2.5f;
+        const float RoundTo = 0.05f;
 
         static readonly FloatRange MinMaxTemperatureRange = new FloatRange(-100, 100);
 
@@ -268,6 +269,11 @@ namespace Outfitted
             GUI.color = AssigmentColor(statPriority);
 
             float weight = GUI.HorizontalSlider(sliderRect, statPriority.Weight, -MaxValue, MaxValue);
+
+            if (RoundTo > 0f)
+            {
+                weight = (float)Mathf.RoundToInt(weight / RoundTo) * RoundTo;
+            }
 
             if (Mathf.Abs(weight - statPriority.Weight) > 1e-4)
             {
