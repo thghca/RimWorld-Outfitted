@@ -18,7 +18,7 @@ namespace Outfitted
         const float marginTop = 10f;
         const float marginBottom = 55f;
 
-        const float MaxValue = 2.5f;
+        const float MaxValue = 1.5f;
         const float RoundTo = 0.05f;
 
         static readonly FloatRange MinMaxTemperatureRange = new FloatRange(-100, 100);

@@ -10,11 +10,11 @@ namespace Outfitted.Database
 {
     static class Priority
     {
-        public const float Unwanted = -2f;
-        public const float Undesired = -1f;
+        public const float Unwanted = -1f;
+        public const float Undesired = -0.5f;
         public const float Neutral = 0f;
-        public const float Desired = 1f;
-        public const float Wanted = 2f;
+        public const float Desired = 0.5f;
+        public const float Wanted = 1f;
     }
 
     [HarmonyPatch(typeof(OutfitDatabase), nameof(OutfitDatabase.MakeNewOutfit))]
