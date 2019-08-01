@@ -18,7 +18,7 @@ namespace Outfitted
 
         const float marginLeft = 320f;
         const float marginRight = 10f;
-        const float marginTop = 10f;
+        const float marginTop = 50f;
         const float marginBottom = 55f;
 
         const float MaxValue = 1.5f;
